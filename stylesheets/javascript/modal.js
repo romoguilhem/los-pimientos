@@ -1,19 +1,36 @@
+// Fonction pour ouvrir la modale
+function openModal() {
+  modal.style.display = 'flex';
+}
+
+// Fonction pour fermer la modale
+function closeModal() {
+  modal.style.display = 'none';
+}
+
 // Ouvrir la modale en cliquant sur le bouton
 const openModalBtn = document.getElementById("openModalBtn");
 const modal = document.getElementById("myModal");
 const closeBtn = document.querySelector(".close");
 
+
 openModalBtn.addEventListener("click", () => {
-  modal.style.display = "flex";
+  openModal();
 });
 
-// Fermer la modale en cliquant sur le bouton de fermeture ou en cliquant en dehors de la modale
+// Fermer la modale en cliquant sur le bouton de fermeture, en cliquant en dehors de la modale ou en appuyant sur Echap.
 closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+  closeModal();
 });
 
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
-    modal.style.display = "none";
+    closeModal();
+  }
+});
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModal();
   }
 });

@@ -11,16 +11,24 @@
 }
 
 #navbar {
+  background-color: #f8f9fa;
+  top: 0;
   text-align: center;
   border-radius: 4px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: min-content;
-  position: static;
+  /* width: 100%; */
+  position: fixed;
 }
 
 #navbar img {
   width: auto;
   height: 100px;
+}
+
+#main {
+  margin-left: 20px;
+  padding-top: 100px;
 }
