@@ -1,0 +1,26 @@
+.link {
+  border-left: 2px solid lightgrey;
+  padding: 25px;
+  text-decoration: none;
+  color: #178f44;
+}
+
+.link:hover {
+  background-color: lightgrey;
+  color: #cc2429;
+}
+
+#navbar {
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: min-content;
+  position: static;
+}
+
+#navbar img {
+  width: auto;
+  height: 100px;
+}
