@@ -1,0 +1,36 @@
+.card {
+  border: 2px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: 3px 3px 4px 2px lightgrey;
+  height: 250px;
+  width: 175px;
+  overflow: hidden;
+  transition: transform 0.3s ease, width 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.card-info, .card img {
+  margin: 0;
+  padding: 10px;
+}
+
+.card img {
+  height: 100px;
+  width: auto;
+}
+
+.card.expanded {
+  width: 400px;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#card-container {
+  display: grid;
+  grid-template-areas: "card card card";
+
+}
