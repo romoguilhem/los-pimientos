@@ -23,7 +23,13 @@ h2 {
   color:#178f44;
 }
 
-img {
+.home-img {
   width: auto;
-  height: 250px;
+  height: 500px;
+}
+
+img {
+  border-radius: 50%;
+  width: auto;
+  height: 150px;
 }

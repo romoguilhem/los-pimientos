@@ -12,12 +12,47 @@
   background-color:antiquewhite;
   color: #178f44;
   width: 50%;
+  max-width: 400px;
   margin: auto;
   padding: 20px;
 }
 
 .close {
   float: right;
-  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
+  transition: transform 0.3s ease
+}
+
+.close:hover {
+  transform: scale(1.5);
+}
+
+.insta {
+  text-decoration: none;
+  color: #178f44;
+  /* transition: font-weight 0.2s ease; */
+}
+
+.insta:hover {
+  font-weight: bold;
+}
+
+.copy-text:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-message, .copy-confirm {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -20px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  /* transition: opacity 0.3s ease; */
 }
