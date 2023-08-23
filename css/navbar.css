@@ -22,6 +22,11 @@
   /* width: 100%; */
   position: fixed;
   max-width: 850px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#navbar.hidden {
+  transform: translateY(-100%);
 }
 
 #navbar img {

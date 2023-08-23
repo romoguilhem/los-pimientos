@@ -7,7 +7,6 @@
   overflow: hidden;
   transition: transform 0.3s ease, width 0.3s;
   cursor: pointer;
-  margin: 10px;
 }
 
 .card-info, .card img {
@@ -20,17 +19,19 @@
   width: auto;
 }
 
-.card.expanded {
+.card.clicked {
   width: 400px;
   height: auto;
 }
 
 .card:hover {
   transform: scale(1.05);
+  background-color: #f7f9fa;
 }
 
 #card-container {
   display: grid;
   grid-template-areas: "card card card";
-
+  margin-bottom: 200px;
+  gap: 20px;
 }
