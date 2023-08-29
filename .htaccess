@@ -1,3 +1,4 @@
+# Fichier configuration des URL, ne fonctionne pas en local
 RewriteEngine On
 
 # Rediriger /home vers /
