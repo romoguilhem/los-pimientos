@@ -3,15 +3,21 @@
   padding: 25px;
   text-decoration: none;
   color: #178f44;
+  font-weight: 700;
 }
 
-.link:hover {
-  background-color: lightgrey;
-  color: #cc2429;
+a span {
+  display: block;
+  transition: transform 0.2s;
+}
+
+a:hover span {
+  transform: scale(1.1);
 }
 
 #navbar {
   background-color: #f8f9fa;
+  box-shadow: 3px 3px 4px 2px lightgrey;
   top: 0;
   text-align: center;
   border-radius: 4px;
@@ -34,6 +40,12 @@
   height: 100px;
   border-radius: 50%;
   padding-right: 12px;
+  transition: transform 0.2;
+}
+
+#navbar img:hover {
+  max-height: 100%;
+  transform: scale(1.05);
 }
 
 #main {
